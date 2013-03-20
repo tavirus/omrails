@@ -67,12 +67,12 @@ Omrails::Application.configure do
   config.action_mailer.default_url_options = { :host => 'www.tavai.herokuapp.com' }
 
   # Paperclip should use Amazon S3 on Heroku
-  config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_credentials => {
-    :bucket => "tavai.me",
-    :access_key_id => "AKIAJAVXI6H7RB4DXRSA",
-    :secret_access_key => "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"
+    config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => "tavaibucket",
+      :access_key_id => "AKIAJAVXI6H7RB4DXRSA",
+      :secret_access_key => "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"
+    }
   }
-}
-end
+  end
