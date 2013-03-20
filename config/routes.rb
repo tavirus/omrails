@@ -7,7 +7,8 @@ Omrails::Application.routes.draw do
 
   root :to => 'pins#index'
   get 'about' => 'pages#about'
-  get 'pins' => 'pages#pins'
+  get 'frandfa' => 'pages#faf'
+
   
 
 end
