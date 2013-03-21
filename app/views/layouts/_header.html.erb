@@ -28,11 +28,11 @@
   </a>
   <ul class="dropdown-menu">
                             <% if user_signed_in? %>
-                                    <li><%= link_to 'Add +',  new_pin_path %></li>
-                                    <li><%= link_to 'Edit Profile',  edit_user_registration_path %></li>
-                                    <li><%= link_to 'Log out',  destroy_user_session_path, method: :delete %></li>
+                                    <i class="icon-plus"></i><li><%= link_to 'Add', new_pin_path %></li>
+                                    <i class="icon-edit"></i><li><%= link_to 'Edit Profile',  edit_user_registration_path %></li>
+                                    <i class="icon-off"></i><li><%= link_to 'Log out',  destroy_user_session_path, method: :delete %></li>
                                     <% else %>
-                                    <li><%= link_to 'Login',  new_user_session_path %></li>
+                                    <i class="icon-user"></i><li><%= link_to 'Login',  new_user_session_path %></li>
                                     <% end %>
                         </ul>
 </div>
