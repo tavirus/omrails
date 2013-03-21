@@ -1,12 +1,3 @@
-<% if user_signed_in? %>
-<ul class="nav nav-list">
-  <li class="active"><a href="/pins"><i class="icon-home icon-white"></i> Home</a></li>
-  <li><a href="/users/sign_out"><i class="icon-off"></i> Sign Out</a></li>
-  <li><a href="/users/edit"><i class="icon-pencil"></i> Edit Profile</a></li>
-  <%else%>
-  <li><a href="/users/sign_in"><i class="icon-user"></i> Log In</a></li>
-</ul>
-<% end %>
 <%= render 'pages/home' %>
 
 <div id="pins">
