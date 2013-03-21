@@ -9,7 +9,6 @@ Omrails::Application.routes.draw do
   get 'about' => 'pages#about'
   get 'frandfa' => 'pages#faf'
 
-  
 
 end
 
